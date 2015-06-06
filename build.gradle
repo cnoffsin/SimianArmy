@@ -17,6 +17,16 @@ apply plugin: 'war'
 apply plugin: 'jetty'
 
 dependencies {
+    //for the OpenStack Client
+    compile 'org.apache.jclouds.api:openstack-keystone:1.9.0'
+	compile 'org.apache.jclouds.api:openstack-nova:1.9.0'
+	//compile 'org.jclouds.api:openstack-swift:1.9.0'
+	compile 'org.apache.jclouds.api:openstack-cinder:1.9.0'
+	//compile 'org.jclouds.api:openstack-trove:1.9.0'
+	compile 'org.apache.jclouds.labs:openstack-glance:1.9.0'
+	//compile 'org.jclouds.api:openstack-marconi:1.9.0'
+	//compile 'org.jclouds.api:openstack-neutron:1.9.0'
+    
     // for the VMWareClient
     compile 'com.cloudbees.thirdparty:vijava:5.0.0'
 
