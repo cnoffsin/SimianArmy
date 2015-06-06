@@ -29,6 +29,13 @@ import org.slf4j.LoggerFactory;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
+//OpenStack Imports
+import com.netflix.simianarmy.chaos.FailCinderChaosType;
+import com.netflix.simianarmy.chaos.FailCinderv2ChaosType;
+import com.netflix.simianarmy.chaos.FailGlanceChaosType;
+import com.netflix.simianarmy.chaos.FailKeystoneChaosType;
+import com.netflix.simianarmy.chaos.FailNovaChaosType;
+
 /**
  * The Class BasicChaosMonkey.
  */
@@ -89,6 +96,13 @@ public class BasicChaosMonkey extends ChaosMonkey {
         allChaosTypes.add(new NetworkCorruptionChaosType(cfg));
         allChaosTypes.add(new NetworkLatencyChaosType(cfg));
         allChaosTypes.add(new NetworkLossChaosType(cfg));
+        
+        // OpenStack Chaos
+        allChaosTypes.add(new FailNovaChaosType(cfg));
+        allChaosTypes.add(new FailCinderChaosType(cfg));
+        allChaosTypes.add(new FailCinderv2ChaosType(cfg));
+        allChaosTypes.add(new FailKeystoneChaosType(cfg));
+        allChaosTypes.add(new FailGlanceChaosType(cfg));
 
         TimeUnit freqUnit = ctx.scheduler().frequencyUnit();
         if (TimeUnit.DAYS == freqUnit) {
