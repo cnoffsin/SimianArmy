@@ -30,7 +30,8 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 //OpenStack Imports
-import com.netflix.simianarmy.chaos.FailCinderChaosType;
+//This Module appears to be Deprecated, doesn't compile with it
+//import com.netflix.simianarmy.chaos.FailCinderChaosType;
 import com.netflix.simianarmy.chaos.FailCinderv2ChaosType;
 import com.netflix.simianarmy.chaos.FailGlanceChaosType;
 import com.netflix.simianarmy.chaos.FailKeystoneChaosType;
@@ -99,7 +100,7 @@ public class BasicChaosMonkey extends ChaosMonkey {
         
         // OpenStack Chaos
         allChaosTypes.add(new FailNovaChaosType(cfg));
-        allChaosTypes.add(new FailCinderChaosType(cfg));
+        //allChaosTypes.add(new FailCinderChaosType(cfg));
         allChaosTypes.add(new FailCinderv2ChaosType(cfg));
         allChaosTypes.add(new FailKeystoneChaosType(cfg));
         allChaosTypes.add(new FailGlanceChaosType(cfg));
