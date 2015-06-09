@@ -11,7 +11,7 @@ Ssbanerje tried to get his code merged with the upstream branch but it wasn't ac
 
 *Updated jclouds for Gradle
 
-*Disabled the other monkeys.  Just disabling them in properties wasn't enough, I had to disable them in the java code
+*Disabled the other monkeys.  Just disabling them in properties wasn't enough, I had to disable them in the java code here: src/main/java/com/netflix/simianarmy/basic/BasicMonkeyServer.java
 
 *Took out Cinder 1.0 references because it has been deprecated by jclouds
 
@@ -19,7 +19,7 @@ Ssbanerje tried to get his code merged with the upstream branch but it wasn't ac
 
 *Enabled the lines that work for Openstack in all properties files and disabled the ones that don't
 
-*Monkey's are left leashed but I turned up the frequency that they run and enabled MonkeyTime at all hours of the day
+*Monkey's are left leashed but I turned up the frequency that they run and enabled MonkeyTime at all hours of the day.  This is because it is difficult to know if the monkey has made the connections to your cloud.
 
 ## Netflix SimianArmy Description https://github.com/Netflix/SimianArmy
 
