@@ -1,4 +1,4 @@
-/*
+/////////////*
  *
  *  Copyright 2012 Netflix, Inc.
  *
@@ -51,12 +51,12 @@ public class BasicMonkeyServer extends HttpServlet {
     public void addMonkeysToRun() {
         LOGGER.info("Adding Chaos Monkey.");
         RUNNER.replaceMonkey(this.chaosClass, this.chaosContextClass);
-        LOGGER.info("Adding Volume Tagging Monkey.");
-        RUNNER.replaceMonkey(VolumeTaggingMonkey.class, BasicVolumeTaggingMonkeyContext.class);
-        LOGGER.info("Adding Janitor Monkey.");
-        RUNNER.replaceMonkey(BasicJanitorMonkey.class, BasicJanitorMonkeyContext.class);
-        LOGGER.info("Adding Conformity Monkey.");
-        RUNNER.replaceMonkey(BasicConformityMonkey.class, BasicConformityMonkeyContext.class);
+    //    LOGGER.info("Adding Volume Tagging Monkey.");
+    //    RUNNER.replaceMonkey(VolumeTaggingMonkey.class, BasicVolumeTaggingMonkeyContext.class);
+    //    LOGGER.info("Adding Janitor Monkey.");
+    //    RUNNER.replaceMonkey(BasicJanitorMonkey.class, BasicJanitorMonkeyContext.class);
+    //    LOGGER.info("Adding Conformity Monkey.");
+    //    RUNNER.replaceMonkey(BasicConformityMonkey.class, BasicConformityMonkeyContext.class);
     }
 
     /**
