@@ -7,16 +7,21 @@ I was able to modify NetFlix's SimianArmy Chaos Monkey to work on an OpenStack C
 
 Ssbanerje tried to get his code merged with the upstream branch but it wasn't acknowledged.
 
-I made these changes to his code
+##I made these changes to his code:
 
 *Updated jclouds for Gradle
+
 *Disabled the other monkeys.  Just disabling them in properties wasn't enough, I had to disable them in the java code
+
 *Took out Cinder 1.0 references because it has been deprecated by jclouds
+
 *Added the ssh lines commented out here src/main/resources/chaos.properties
+
 *Enabled the lines that work for Openstack in all properties files and disabled the ones that don't
+
 *Monkey's are left leashed but I turned up the frequency that they run and enabled MonkeyTime at all hours of the day
 
-## Netflix SimianArmy Description
+## Netflix SimianArmy Description https://github.com/Netflix/SimianArmy
 
 The Simian Army is a suite of tools for keeping your cloud operating in top form.  Chaos Monkey, the first member, is a resiliency tool that
 helps ensure that your applications can tolerate random instance failures
