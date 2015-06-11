@@ -21,6 +21,8 @@ Ssbanerje tried to get his code merged with the upstream branch but it wasn't ac
 
 *Monkey's are left leashed but I turned up the frequency that they run and enabled MonkeyTime at all hours of the day.  This is because it is difficult to know if the monkey has made the connections to your cloud.
 
+*Disabled the SimpleDB and set it to use localstorage for DB data.  This is obviously because you wouldn't have AWS to store db data in
+
 ## Netflix SimianArmy Description https://github.com/Netflix/SimianArmy
 
 The Simian Army is a suite of tools for keeping your cloud operating in top form.  Chaos Monkey, the first member, is a resiliency tool that
